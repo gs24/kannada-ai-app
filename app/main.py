@@ -4,7 +4,7 @@ import sys
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from app.pages import learn, practice
+from app.pages import learn, practice, quiz
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
@@ -22,3 +22,5 @@ if choice == "Learn words":
     learn.show()
 elif choice == "Practice":
     practice.show()               
+elif choice == "Quiz":
+    quiz.show()   
